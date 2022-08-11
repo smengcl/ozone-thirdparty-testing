@@ -16,15 +16,15 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.apache.ratis</groupId>
-    <artifactId>ratis-thirdparty</artifactId>
-    <version>1.0.2</version>
+    <groupId>org.apache.ozone</groupId>
+    <artifactId>ozone-thirdparty</artifactId>
+    <version>1.0.0</version>
   </parent>
-  <artifactId>ratis-thirdparty-test</artifactId>
+  <artifactId>ozone-thirdparty-test</artifactId>
   <name>Apache Ratis Thirdparty Test</name>
   <packaging>jar</packaging>
   <description>Miscellaneous tests for Apache Ratis Thirdparty Jar</description>
-  <url>https://github.com/apache/ratis-thirdparty</url>
+  <url>https://github.com/apache/ozone-thirdparty</url>
 
   <properties>
     <protobuf-maven-plugin.version>0.6.1</protobuf-maven-plugin.version>
@@ -35,8 +35,8 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.apache.ratis</groupId>
-      <artifactId>ratis-thirdparty-misc</artifactId>
+      <groupId>org.apache.ozone</groupId>
+      <artifactId>ozone-thirdparty-misc</artifactId>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
@@ -131,11 +131,11 @@
           <replacements>
             <replacement>
               <token>([^\.])com.google</token>
-              <value>$1org.apache.ratis.thirdparty.com.google</value>
+              <value>$1org.apache.ozone.thirdparty.com.google</value>
             </replacement>
             <replacement>
               <token>([^\.])io.grpc</token>
-              <value>$1org.apache.ratis.thirdparty.io.grpc</value>
+              <value>$1org.apache.ozone.thirdparty.io.grpc</value>
             </replacement>
           </replacements>
         </configuration>

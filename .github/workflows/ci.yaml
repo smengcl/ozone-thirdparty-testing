@@ -37,5 +37,5 @@ jobs:
       - name: Run a full build
         run: mvn --no-transfer-progress -Ptest clean verify
       - name: Delete temporary build artifacts
-        run: rm -rf ~/.m2/repository/org/apache/ratis
+        run: rm -rf ~/.m2/repository/org/apache/ozone
         if: always()

@@ -15,30 +15,30 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.ratis.thirdparty.demo.netty;
+package org.apache.ozone.thirdparty.demo.netty;
 
-import org.apache.ratis.thirdparty.io.netty.bootstrap.ServerBootstrap;
-import org.apache.ratis.thirdparty.io.netty.buffer.ByteBuf;
-import org.apache.ratis.thirdparty.io.netty.channel.ChannelFuture;
-import org.apache.ratis.thirdparty.io.netty.channel.ChannelHandlerContext;
-import org.apache.ratis.thirdparty.io.netty.channel.ChannelInboundHandler;
-import org.apache.ratis.thirdparty.io.netty.channel.ChannelInboundHandlerAdapter;
-import org.apache.ratis.thirdparty.io.netty.channel.ChannelInitializer;
-import org.apache.ratis.thirdparty.io.netty.channel.ChannelPipeline;
-import org.apache.ratis.thirdparty.io.netty.channel.EventLoopGroup;
-import org.apache.ratis.thirdparty.io.netty.channel.nio.NioEventLoopGroup;
-import org.apache.ratis.thirdparty.io.netty.channel.socket.SocketChannel;
-import org.apache.ratis.thirdparty.io.netty.channel.socket.nio.NioServerSocketChannel;
-import org.apache.ratis.thirdparty.io.netty.handler.logging.LogLevel;
-import org.apache.ratis.thirdparty.io.netty.handler.logging.LoggingHandler;
-import org.apache.ratis.thirdparty.io.netty.handler.ssl.SslContext;
+import org.apache.ozone.thirdparty.io.netty.bootstrap.ServerBootstrap;
+import org.apache.ozone.thirdparty.io.netty.buffer.ByteBuf;
+import org.apache.ozone.thirdparty.io.netty.channel.ChannelFuture;
+import org.apache.ozone.thirdparty.io.netty.channel.ChannelHandlerContext;
+import org.apache.ozone.thirdparty.io.netty.channel.ChannelInboundHandler;
+import org.apache.ozone.thirdparty.io.netty.channel.ChannelInboundHandlerAdapter;
+import org.apache.ozone.thirdparty.io.netty.channel.ChannelInitializer;
+import org.apache.ozone.thirdparty.io.netty.channel.ChannelPipeline;
+import org.apache.ozone.thirdparty.io.netty.channel.EventLoopGroup;
+import org.apache.ozone.thirdparty.io.netty.channel.nio.NioEventLoopGroup;
+import org.apache.ozone.thirdparty.io.netty.channel.socket.SocketChannel;
+import org.apache.ozone.thirdparty.io.netty.channel.socket.nio.NioServerSocketChannel;
+import org.apache.ozone.thirdparty.io.netty.handler.logging.LogLevel;
+import org.apache.ozone.thirdparty.io.netty.handler.logging.LoggingHandler;
+import org.apache.ozone.thirdparty.io.netty.handler.ssl.SslContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.Closeable;
 
 /**
- * Netty demo server with shaded ratis thirdparty jar.
+ * Netty demo server with shaded ozone thirdparty jar.
  */
 public class NettyServer implements Closeable {
   private static final Logger LOG = LoggerFactory.getLogger(NettyServer.class);

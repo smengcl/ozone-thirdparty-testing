@@ -15,20 +15,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.ratis.thirdparty.demo.grpc;
+package org.apache.ozone.thirdparty.demo.grpc;
 
-import org.apache.ratis.thirdparty.demo.proto.GreeterGrpc;
-import org.apache.ratis.thirdparty.demo.proto.HelloReply;
-import org.apache.ratis.thirdparty.demo.proto.HelloRequest;
-import org.apache.ratis.thirdparty.io.grpc.ManagedChannel;
-import org.apache.ratis.thirdparty.io.grpc.ManagedChannelBuilder;
-import org.apache.ratis.thirdparty.io.grpc.StatusRuntimeException;
+import org.apache.ozone.thirdparty.demo.proto.GreeterGrpc;
+import org.apache.ozone.thirdparty.demo.proto.HelloReply;
+import org.apache.ozone.thirdparty.demo.proto.HelloRequest;
+import org.apache.ozone.thirdparty.io.grpc.ManagedChannel;
+import org.apache.ozone.thirdparty.io.grpc.ManagedChannelBuilder;
+import org.apache.ozone.thirdparty.io.grpc.StatusRuntimeException;
 import java.util.concurrent.TimeUnit;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * gRPC Demo client with shaded ratis thirdparty jar.
+ * gRPC Demo client with shaded ozone thirdparty jar.
  */
 public class GrpcClient {
   private static final Logger LOG = LoggerFactory.getLogger(GrpcClient.class);

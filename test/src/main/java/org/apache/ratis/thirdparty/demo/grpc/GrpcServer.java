@@ -15,16 +15,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.ratis.thirdparty.demo.grpc;
+package org.apache.ozone.thirdparty.demo.grpc;
 
-import org.apache.ratis.thirdparty.io.grpc.Server;
-import org.apache.ratis.thirdparty.io.grpc.ServerBuilder;
+import org.apache.ozone.thirdparty.io.grpc.Server;
+import org.apache.ozone.thirdparty.io.grpc.ServerBuilder;
 import java.io.IOException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * gRPC Demo server with shaded ratis thirdparty jar.
+ * gRPC Demo server with shaded ozone thirdparty jar.
  */
 public class GrpcServer {
   private static final Logger LOG = LoggerFactory.getLogger(GrpcServer.class);

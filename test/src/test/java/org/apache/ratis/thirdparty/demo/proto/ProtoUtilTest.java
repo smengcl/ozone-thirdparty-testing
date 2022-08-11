@@ -15,26 +15,26 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.ratis.thirdparty.demo.proto;
+package org.apache.ozone.thirdparty.demo.proto;
 
-import org.apache.ratis.thirdparty.com.google.protobuf.util.JsonFormat;
+import org.apache.ozone.thirdparty.com.google.protobuf.util.JsonFormat;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 /**
- * Unit test for ensure that protobuf-java-util is properly shaded as ratis thirdparty.
+ * Unit test for ensure that protobuf-java-util is properly shaded as ozone thirdparty.
  */
 @RunWith(JUnit4.class)
 public class ProtoUtilTest {
 
     @Test
     public void testJsonFormatPrinter() throws Exception {
-        final HelloRequest request = HelloRequest.newBuilder().setName("ratis").build();
+        final HelloRequest request = HelloRequest.newBuilder().setName("ozone").build();
         final String actual = JsonFormat.printer().print(request);
         final String expected = "{\n" +
-            "  \"name\": \"ratis\"\n" +
+            "  \"name\": \"ozone\"\n" +
             "}";
         Assert.assertEquals(expected, actual);
     }

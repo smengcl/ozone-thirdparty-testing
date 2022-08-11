@@ -15,15 +15,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.ratis.thirdparty.demo.netty;
+package org.apache.ozone.thirdparty.demo.netty;
 
-import org.apache.ratis.thirdparty.demo.common.SslClientConfig;
-import org.apache.ratis.thirdparty.demo.common.SslServerConfig;
-import org.apache.ratis.thirdparty.io.grpc.netty.GrpcSslContexts;
-import org.apache.ratis.thirdparty.io.netty.buffer.ByteBuf;
-import org.apache.ratis.thirdparty.io.netty.buffer.Unpooled;
-import org.apache.ratis.thirdparty.io.netty.handler.ssl.ClientAuth;
-import org.apache.ratis.thirdparty.io.netty.handler.ssl.SslContextBuilder;
+import org.apache.ozone.thirdparty.demo.common.SslClientConfig;
+import org.apache.ozone.thirdparty.demo.common.SslServerConfig;
+import org.apache.ozone.thirdparty.io.grpc.netty.GrpcSslContexts;
+import org.apache.ozone.thirdparty.io.netty.buffer.ByteBuf;
+import org.apache.ozone.thirdparty.io.netty.buffer.Unpooled;
+import org.apache.ozone.thirdparty.io.netty.handler.ssl.ClientAuth;
+import org.apache.ozone.thirdparty.io.netty.handler.ssl.SslContextBuilder;
 
 import java.nio.charset.StandardCharsets;
 

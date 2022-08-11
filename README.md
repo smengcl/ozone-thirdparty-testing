@@ -14,9 +14,9 @@
 
 # Apache Ratis Thirdparty
 
-All bundled thirdparty dependencies are centralized in the *ratis-thirdparty* module.
-These modules are located in a separated repository (https://github.com/apache/ratis-thirdparty)
-but not attached to the core Apache Ratis repository (https://git-wip-us.apache.org/repos/asf?p=ratis.git)
+All bundled thirdparty dependencies are centralized in the *ozone-thirdparty* module.
+These modules are located in a separated repository (https://github.com/apache/ozone-thirdparty)
+but not attached to the core Apache Ratis repository (https://git-wip-us.apache.org/repos/asf?p=ozone.git)
 as they only need to change when one of these dependencies are changed.
 
-See also: https://github.com/apache/ratis/blob/master/BUILDING.md
+See also: https://github.com/apache/ozone/blob/master/BUILDING.md

@@ -20,14 +20,14 @@
     <version>23</version>
     <relativePath /> <!-- resolve from repository -->
   </parent>
-  <artifactId>ratis-thirdparty</artifactId>
-  <groupId>org.apache.ratis</groupId>
-  <version>1.0.2</version>
-  <name>Apache Ratis Thirdparty</name>
+  <artifactId>ozone-thirdparty</artifactId>
+  <groupId>org.apache.ozone</groupId>
+  <version>1.0.0</version>
+  <name>Apache Ozone Thirdparty</name>
   <packaging>pom</packaging>
-  <description>Thirdparty dependencies for Apache Ratis</description>
-  <url>https://ratis.apache.org/</url>
-  <inceptionYear>2017</inceptionYear>
+  <description>Thirdparty dependencies for Apache Ozone</description>
+  <url>https://ozone.apache.org/</url>
+
   <modules>
     <module>misc</module>
   </modules>
@@ -38,14 +38,14 @@
     </license>
   </licenses>
   <scm>
-    <connection>scm:git:git://github.com/apache/ratis-thirdparty.git</connection>
-    <developerConnection>scm:git:https://github.com/apache/ratis-thirdparty.git</developerConnection>
-    <url>https://github.com/apache/ratis-thirdparty</url>
+    <connection>scm:git:git://github.com/apache/ozone-thirdparty.git</connection>
+    <developerConnection>scm:git:https://github.com/apache/ozone-thirdparty.git</developerConnection>
+    <url>https://github.com/apache/ozone-thirdparty</url>
     <tag>HEAD</tag>
   </scm>
   <issueManagement>
     <system>JIRA</system>
-    <url>http://issues.apache.org/jira/browse/RATIS</url>
+    <url>https://issues.apache.org/jira/browse/HDDS</url>
   </issueManagement>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -80,19 +80,19 @@
     <!-- third party library versions -->
     <commons-lang3.version>3.8.1</commons-lang3.version>
     <gson.version>2.8.9</gson.version>
-    <guava.version>31.0.1-jre</guava.version>
+    <guava.version>31.1-jre</guava.version>
     <io.opencensus.version>0.21.0</io.opencensus.version>
 
-    <ratis.thirdparty.shaded.prefix>org.apache.ratis.thirdparty</ratis.thirdparty.shaded.prefix>
-    <ratis.thirdparty.shaded.native.prefix>org_apache_ratis_thirdparty_</ratis.thirdparty.shaded.native.prefix>
+    <ozone.thirdparty.shaded.prefix>org.apache.ozone.thirdparty</ozone.thirdparty.shaded.prefix>
+    <ozone.thirdparty.shaded.native.prefix>org_apache_ozone_thirdparty_</ozone.thirdparty.shaded.native.prefix>
   </properties>
 
   <dependencyManagement>
     <dependencies>
       <!-- Project dependencies -->
       <dependency>
-        <groupId>org.apache.ratis</groupId>
-        <artifactId>ratis-thirdparty-misc</artifactId>
+        <groupId>org.apache.ozone</groupId>
+        <artifactId>ozone-thirdparty-misc</artifactId>
         <version>${project.version}</version>
       </dependency>
 
@@ -344,7 +344,7 @@
             <executions>
               <execution>
                 <!-- builds source jars and attaches them to the project for publishing -->
-                <id>ratis-java-sources</id>
+                <id>ozone-java-sources</id>
                 <phase>package</phase>
                 <goals>
                   <goal>jar-no-fork</goal>

@@ -15,11 +15,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.ratis.thirdparty.demo.grpc;
+package org.apache.ozone.thirdparty.demo.grpc;
 
-import org.apache.ratis.thirdparty.demo.common.SslClientConfig;
-import org.apache.ratis.thirdparty.demo.common.SslServerConfig;
-import org.apache.ratis.thirdparty.demo.common.TestUtils;
+import org.apache.ozone.thirdparty.demo.common.SslClientConfig;
+import org.apache.ozone.thirdparty.demo.common.SslServerConfig;
+import org.apache.ozone.thirdparty.demo.common.TestUtils;
 import org.junit.Assert;
 import org.junit.Test;
 import org.slf4j.Logger;

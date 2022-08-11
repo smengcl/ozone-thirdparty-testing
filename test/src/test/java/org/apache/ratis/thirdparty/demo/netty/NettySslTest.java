@@ -15,13 +15,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.ratis.thirdparty.demo.netty;
+package org.apache.ozone.thirdparty.demo.netty;
 
-import org.apache.ratis.thirdparty.demo.common.SslClientConfig;
-import org.apache.ratis.thirdparty.demo.common.SslServerConfig;
-import org.apache.ratis.thirdparty.demo.common.TestUtils;
-import org.apache.ratis.thirdparty.io.netty.buffer.ByteBuf;
-import org.apache.ratis.thirdparty.io.netty.handler.ssl.SslContext;
+import org.apache.ozone.thirdparty.demo.common.SslClientConfig;
+import org.apache.ozone.thirdparty.demo.common.SslServerConfig;
+import org.apache.ozone.thirdparty.demo.common.TestUtils;
+import org.apache.ozone.thirdparty.io.netty.buffer.ByteBuf;
+import org.apache.ozone.thirdparty.io.netty.handler.ssl.SslContext;
 import org.junit.Assert;
 import org.junit.Test;
 import org.slf4j.Logger;
@@ -33,7 +33,7 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Unit test for demo netty client/server with ratis thirdparty.
+ * Unit test for demo netty client/server with ozone thirdparty.
  */
 public class NettySslTest {
   private final static Logger LOG = LoggerFactory.getLogger(NettySslTest.class);

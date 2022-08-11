@@ -15,14 +15,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.apache.ratis</groupId>
-    <artifactId>ratis-thirdparty</artifactId>
-    <version>1.0.2</version>
+    <groupId>org.apache.ozone</groupId>
+    <artifactId>ozone-thirdparty</artifactId>
+    <version>1.0.0</version>
   </parent>
-  <artifactId>ratis-thirdparty-misc</artifactId>
-  <name>Apache Ratis Thirdparty Miscellaneous</name>
+  <artifactId>ozone-thirdparty-misc</artifactId>
+  <name>Apache Ozone Thirdparty Miscellaneous</name>
   <packaging>jar</packaging>
-  <description>Miscellaneous thirdparty dependencies for Apache Ratis</description>
+  <description>Miscellaneous thirdparty dependencies for Apache Ozone</description>
   <dependencies>
     <dependency>
       <groupId>com.google.protobuf</groupId>
@@ -127,72 +127,72 @@
               <relocations>
                 <relocation>
                   <pattern>com.google.api</pattern>
-                  <shadedPattern>${ratis.thirdparty.shaded.prefix}.com.google.api</shadedPattern>
+                  <shadedPattern>${ozone.thirdparty.shaded.prefix}.com.google.api</shadedPattern>
                 </relocation>
                 <relocation>
                   <pattern>com.google.cloud.audit</pattern>
-                  <shadedPattern>${ratis.thirdparty.shaded.prefix}.com.google.cloud.audit</shadedPattern>
+                  <shadedPattern>${ozone.thirdparty.shaded.prefix}.com.google.cloud.audit</shadedPattern>
                 </relocation>
                 <relocation>
                   <pattern>com.google.common</pattern>
-                  <shadedPattern>${ratis.thirdparty.shaded.prefix}.com.google.common</shadedPattern>
+                  <shadedPattern>${ozone.thirdparty.shaded.prefix}.com.google.common</shadedPattern>
                 </relocation>
                 <relocation>
                   <pattern>com.google.logging.type</pattern>
-                  <shadedPattern>${ratis.thirdparty.shaded.prefix}.com.google.logging.type</shadedPattern>
+                  <shadedPattern>${ozone.thirdparty.shaded.prefix}.com.google.logging.type</shadedPattern>
                 </relocation>
                 <relocation>
                   <pattern>com.google.longrunning</pattern>
-                  <shadedPattern>${ratis.thirdparty.shaded.prefix}.com.google.longrunning</shadedPattern>
+                  <shadedPattern>${ozone.thirdparty.shaded.prefix}.com.google.longrunning</shadedPattern>
                 </relocation>
                 <relocation>
                   <pattern>com.google.protobuf</pattern>
-                  <shadedPattern>${ratis.thirdparty.shaded.prefix}.com.google.protobuf</shadedPattern>
+                  <shadedPattern>${ozone.thirdparty.shaded.prefix}.com.google.protobuf</shadedPattern>
                 </relocation>
                 <relocation>
                   <pattern>com.google.rpc</pattern>
-                  <shadedPattern>${ratis.thirdparty.shaded.prefix}.com.google.rpc</shadedPattern>
+                  <shadedPattern>${ozone.thirdparty.shaded.prefix}.com.google.rpc</shadedPattern>
                 </relocation>
                 <relocation>
                   <pattern>com.google.thirdparty.publicsuffix</pattern>
-                  <shadedPattern>${ratis.thirdparty.shaded.prefix}.com.google.thirdparty.publicsuffix</shadedPattern>
+                  <shadedPattern>${ozone.thirdparty.shaded.prefix}.com.google.thirdparty.publicsuffix</shadedPattern>
                 </relocation>
                 <relocation>
                   <pattern>com.google.type</pattern>
-                  <shadedPattern>${ratis.thirdparty.shaded.prefix}.com.google.type</shadedPattern>
+                  <shadedPattern>${ozone.thirdparty.shaded.prefix}.com.google.type</shadedPattern>
                 </relocation>
                 <relocation>
                   <pattern>io.grpc</pattern>
-                  <shadedPattern>${ratis.thirdparty.shaded.prefix}.io.grpc</shadedPattern>
+                  <shadedPattern>${ozone.thirdparty.shaded.prefix}.io.grpc</shadedPattern>
                 </relocation>
                 <relocation>
                   <pattern>io.netty</pattern>
-                  <shadedPattern>${ratis.thirdparty.shaded.prefix}.io.netty</shadedPattern>
+                  <shadedPattern>${ozone.thirdparty.shaded.prefix}.io.netty</shadedPattern>
                 </relocation>
                 <relocation>
                   <pattern>io.opencensus</pattern>
-                  <shadedPattern>${ratis.thirdparty.shaded.prefix}.io.opencensus</shadedPattern>
+                  <shadedPattern>${ozone.thirdparty.shaded.prefix}.io.opencensus</shadedPattern>
                 </relocation>
                 <relocation>
                   <pattern>com.google.gson</pattern>
-                  <shadedPattern>${ratis.thirdparty.shaded.prefix}.com.google.gson</shadedPattern>
+                  <shadedPattern>${ozone.thirdparty.shaded.prefix}.com.google.gson</shadedPattern>
                 </relocation>
                 <relocation>
                   <pattern>afu</pattern>
-                  <shadedPattern>${ratis.thirdparty.shaded.prefix}.afu</shadedPattern>
+                  <shadedPattern>${ozone.thirdparty.shaded.prefix}.afu</shadedPattern>
                 </relocation>
                 <relocation>
                   <pattern>org.checkerframework</pattern>
-                  <shadedPattern>${ratis.thirdparty.shaded.prefix}.org.checkerframework</shadedPattern>
+                  <shadedPattern>${ozone.thirdparty.shaded.prefix}.org.checkerframework</shadedPattern>
                 </relocation>
 
                 <relocation>
                   <pattern>com.codahale.metrics</pattern>
-                  <shadedPattern>${ratis.thirdparty.shaded.prefix}.com.codahale.metrics</shadedPattern>
+                  <shadedPattern>${ozone.thirdparty.shaded.prefix}.com.codahale.metrics</shadedPattern>
                 </relocation>
                 <relocation>
                   <pattern>info.ganglia</pattern>
-                  <shadedPattern>${ratis.thirdparty.shaded.prefix}.info.ganglia</shadedPattern>
+                  <shadedPattern>${ozone.thirdparty.shaded.prefix}.info.ganglia</shadedPattern>
                 </relocation>
               </relocations>
               <filters>
@@ -297,39 +297,39 @@
               <fileSets>
                 <fileSet>
                   <sourceFile>${project.build.directory}/classes/META-INF/native/libnetty_resolver_dns_native_macos_x86_64.jnilib</sourceFile>
-                  <destinationFile>${project.build.directory}/classes/META-INF/native/lib${ratis.thirdparty.shaded.native.prefix}netty_resolver_dns_native_macos_x86_64.jnilib</destinationFile>
+                  <destinationFile>${project.build.directory}/classes/META-INF/native/lib${ozone.thirdparty.shaded.native.prefix}netty_resolver_dns_native_macos_x86_64.jnilib</destinationFile>
                 </fileSet>
                 <fileSet>
                   <sourceFile>${project.build.directory}/classes/META-INF/native/libnetty_tcnative_linux_aarch_64.so</sourceFile>
-                  <destinationFile>${project.build.directory}/classes/META-INF/native/lib${ratis.thirdparty.shaded.native.prefix}netty_tcnative_linux_aarch_64.so</destinationFile>
+                  <destinationFile>${project.build.directory}/classes/META-INF/native/lib${ozone.thirdparty.shaded.native.prefix}netty_tcnative_linux_aarch_64.so</destinationFile>
                 </fileSet>
                 <fileSet>
                   <sourceFile>${project.build.directory}/classes/META-INF/native/libnetty_transport_native_epoll_aarch_64.so</sourceFile>
-                  <destinationFile>${project.build.directory}/classes/META-INF/native/lib${ratis.thirdparty.shaded.native.prefix}netty_transport_native_epoll_aarch_64.so</destinationFile>
+                  <destinationFile>${project.build.directory}/classes/META-INF/native/lib${ozone.thirdparty.shaded.native.prefix}netty_transport_native_epoll_aarch_64.so</destinationFile>
                 </fileSet>
                 <fileSet>
                   <sourceFile>${project.build.directory}/classes/META-INF/native/libnetty_tcnative_linux_x86_64.so</sourceFile>
-                  <destinationFile>${project.build.directory}/classes/META-INF/native/lib${ratis.thirdparty.shaded.native.prefix}netty_tcnative_linux_x86_64.so</destinationFile>
+                  <destinationFile>${project.build.directory}/classes/META-INF/native/lib${ozone.thirdparty.shaded.native.prefix}netty_tcnative_linux_x86_64.so</destinationFile>
                 </fileSet>
                 <fileSet>
                   <sourceFile>${project.build.directory}/classes/META-INF/native/netty_tcnative_windows_x86_64.dll</sourceFile>
-                  <destinationFile>${project.build.directory}/classes/META-INF/native/${ratis.thirdparty.shaded.native.prefix}netty_tcnative_windows_x86_64.dll</destinationFile>
+                  <destinationFile>${project.build.directory}/classes/META-INF/native/${ozone.thirdparty.shaded.native.prefix}netty_tcnative_windows_x86_64.dll</destinationFile>
                 </fileSet>
                 <fileSet>
                   <sourceFile>${project.build.directory}/classes/META-INF/native/libnetty_tcnative_osx_aarch_64.jnilib</sourceFile>
-                  <destinationFile>${project.build.directory}/classes/META-INF/native/lib${ratis.thirdparty.shaded.native.prefix}netty_tcnative_osx_aarch_64.jnilib</destinationFile>
+                  <destinationFile>${project.build.directory}/classes/META-INF/native/lib${ozone.thirdparty.shaded.native.prefix}netty_tcnative_osx_aarch_64.jnilib</destinationFile>
                 </fileSet>
                 <fileSet>
                   <sourceFile>${project.build.directory}/classes/META-INF/native/libnetty_tcnative_osx_x86_64.jnilib</sourceFile>
-                  <destinationFile>${project.build.directory}/classes/META-INF/native/lib${ratis.thirdparty.shaded.native.prefix}netty_tcnative_osx_x86_64.jnilib</destinationFile>
+                  <destinationFile>${project.build.directory}/classes/META-INF/native/lib${ozone.thirdparty.shaded.native.prefix}netty_tcnative_osx_x86_64.jnilib</destinationFile>
                 </fileSet>
                 <fileSet>
                   <sourceFile>${project.build.directory}/classes/META-INF/native/libnetty_transport_native_epoll_x86_64.so</sourceFile>
-                  <destinationFile>${project.build.directory}/classes/META-INF/native/lib${ratis.thirdparty.shaded.native.prefix}netty_transport_native_epoll_x86_64.so</destinationFile>
+                  <destinationFile>${project.build.directory}/classes/META-INF/native/lib${ozone.thirdparty.shaded.native.prefix}netty_transport_native_epoll_x86_64.so</destinationFile>
                 </fileSet>
                 <fileSet>
                   <sourceFile>${project.build.directory}/classes/META-INF/native/libnetty_transport_native_kqueue_x86_64.jnilib</sourceFile>
-                  <destinationFile>${project.build.directory}/classes/META-INF/native/lib${ratis.thirdparty.shaded.native.prefix}netty_transport_native_kqueue_x86_64.jnilib</destinationFile>
+                  <destinationFile>${project.build.directory}/classes/META-INF/native/lib${ozone.thirdparty.shaded.native.prefix}netty_transport_native_kqueue_x86_64.jnilib</destinationFile>
                 </fileSet>
               </fileSets>
             </configuration>

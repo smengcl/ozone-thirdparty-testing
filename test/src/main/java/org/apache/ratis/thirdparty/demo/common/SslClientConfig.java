@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.ratis.thirdparty.demo.common;
+package org.apache.ozone.thirdparty.demo.common;
 
 import java.io.File;
 

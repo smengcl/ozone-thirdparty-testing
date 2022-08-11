@@ -15,9 +15,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.ratis.thirdparty.demo.grpc;
+package org.apache.ozone.thirdparty.demo.grpc;
 
-import org.apache.ratis.thirdparty.demo.common.TestUtils;
+import org.apache.ozone.thirdparty.demo.common.TestUtils;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -28,7 +28,7 @@ import org.slf4j.LoggerFactory;
 import java.io.IOException;
 
 /**
- * Unit test for demo gRPC client/server with ratis thirdparty.
+ * Unit test for demo gRPC client/server with ozone thirdparty.
  */
 @RunWith(JUnit4.class)
 public class GrpcTest {
